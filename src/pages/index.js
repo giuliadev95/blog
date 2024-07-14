@@ -1,16 +1,19 @@
 // Import the Raeact library
 // Is the modern JavaScript ES6 module syntax
 import * as React from 'react'
+import Layout from '../components/layout'
 
 const IndexPage = () => {
     return (
-        <main>
-            <h1>Home</h1>
-            <p>This is a basic website created following along Gatsby tutorial.</p>
-        </main>
+        <Layout pageTitle = "Home">
+            <main>
+            <h2>
+                Il blog per insegnanti online
+            </h2>
+            </main>
+        </Layout>
     )
 }
 
 export const Head = () => <title> Homepage</title>
-
 export default IndexPage
