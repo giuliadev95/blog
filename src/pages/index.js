@@ -1,31 +1,56 @@
 // Import the Raeact library
 // Is the modern JavaScript ES6 module syntax
-import * as React from 'react'
-import Layout from '../components/layout'
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
+    const posts = data.allMarkdownRemark.edges;
+
     return (
-        <Layout pageTitle = "Home">
+        <Layout pageTitle="Home">
             <main>
-            <h2>
-                Il blog per insegnanti online
-            </h2>
-            <p>
-            Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. 
-            Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando 
-            un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. 
-            È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione.
-            </p>
-            <h2>
-                Argomenti
-            </h2>
-            <h2>
-                Contatti
-            </h2>
+                <h2>Il blog per insegnanti online</h2>
+                <p>
+                    Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa.
+                </p>
+
+                <h2>In evidenza</h2>
+                {posts.slice(0, 2).map(({ node }) => (
+                    <article key={node.id}>
+                        <h3>{node.frontmatter.title}</h3>
+                        <p>{node.excerpt}</p>
+                        <a href={node.fields.slug}>Leggi di più</a>
+                    </article>
+                ))}
+
+                <h2>Argomenti</h2>
+                <h2>Seguici sui social</h2>
+                <p>Segui Tutor life sui social per altri consigli</p>
             </main>
         </Layout>
-    )
-}
+    );
+};
 
-export const Head = () => <title> Homepage</title>
-export default IndexPage
+export const query = graphql`
+  query {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+          }
+          excerpt
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`;
+
+export const Head = () => <title>Homepage</title>;
+
+export default IndexPage;

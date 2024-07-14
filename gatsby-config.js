@@ -6,5 +6,14 @@ module.exports = {
     title: `My first Gatsby Site`,
     siteUrl: `https://www.yourdomain.tld`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `blog`,
+        path: `${__dirname}/src/content/blog`, 
+      },
+    },
+    `gatsby-transformer-remark`,
+  ],
 }

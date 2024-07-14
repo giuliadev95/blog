@@ -1,6 +1,5 @@
 import * as React from 'react'
 import {Link} from 'gatsby'
-import logo from '../images/logo.png'
 
 const Layout = ( {pageTitle, children} ) => {
     return (
@@ -29,17 +28,42 @@ const Layout = ( {pageTitle, children} ) => {
                     {children}
                 </main>
                 <footer>
-                    <h2>
-                        Seguici sui social
-                    </h2>
-                    <p>
-                        Segui Tutor life sui social per altri consigli
-                    </p>
                     <ul>
                         <li>
-                            
+                        <span> 
+                            <Link to = "/"> Tutor life </Link>
+                        </span>
                         </li>
-                        <li></li>
+                        <li>
+                            Chi sono
+                        </li>
+                        <li>
+                            Contatti
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <h4>Risorse</h4>
+                        </li>
+                        <li>
+                            FAQ
+                        </li>
+                        <li>
+                            Blog
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <h4>Legale</h4>
+                        </li>
+                        <li>
+                            Termini e condizioni
+                        </li>
+                        <li>
+                            Privacy Policy
+                        </li>
                     </ul>
                 </footer>
             </div>
