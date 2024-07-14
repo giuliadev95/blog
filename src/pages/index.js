@@ -10,6 +10,18 @@ const IndexPage = () => {
             <h2>
                 Il blog per insegnanti online
             </h2>
+            <p>
+            Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e della stampa. 
+            Lorem Ipsum è considerato il testo segnaposto standard sin dal sedicesimo secolo, quando 
+            un anonimo tipografo prese una cassetta di caratteri e li assemblò per preparare un testo campione. 
+            È sopravvissuto non solo a più di cinque secoli, ma anche al passaggio alla videoimpaginazione.
+            </p>
+            <h2>
+                Argomenti
+            </h2>
+            <h2>
+                Contatti
+            </h2>
             </main>
         </Layout>
     )

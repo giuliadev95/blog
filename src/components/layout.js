@@ -28,6 +28,20 @@ const Layout = ( {pageTitle, children} ) => {
                 <main>
                     {children}
                 </main>
+                <footer>
+                    <h2>
+                        Seguici sui social
+                    </h2>
+                    <p>
+                        Segui Tutor life sui social per altri consigli
+                    </p>
+                    <ul>
+                        <li>
+                            
+                        </li>
+                        <li></li>
+                    </ul>
+                </footer>
             </div>
 ) }
 
