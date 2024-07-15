@@ -17,6 +17,7 @@
     "lint:fix": "eslint 'src/**/*.{js,jsx}' --fix"
   },
   "dependencies": {
+    "dompurify": "^3.1.6",
     "gatsby": "^5.13.5",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-remark": "^6.13.1",
