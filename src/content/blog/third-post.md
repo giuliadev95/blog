@@ -1,6 +1,6 @@
 ---
-title: "Second Blog Post"
-date: "2024-07-15"
+title: "Third Blog Post"
+date: "2024-07-16"
 ---
 
 Il modello atomico oggi riconosciuto è l'ultima tappa di una serie di ipotesi che sono state avanzate nel tempo. In età antica alcuni filosofi greci, quali Leucippo (V secolo a.C.), Democrito (V-IV secolo a.C.) ed Epicuro (IV-III secolo a.C.), e romani, quali Tito Lucrezio Caro (I secolo a.C.), ipotizzarono che la materia non fosse continua, ma costituita da particelle minuscole e indivisibili, fondando così la "teoria atomica". Questa corrente filosofica, fondata da Leucippo, venne chiamata "atomismo". Si supponeva che i diversi "atomi" fossero differenti per forma e dimensioni.

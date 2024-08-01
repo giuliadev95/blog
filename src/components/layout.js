@@ -35,10 +35,10 @@ const Layout = ( {pageTitle, children} ) => {
                         </span>
                         </li>
                         <li>
-                            Chi sono
+                            <Link to = "/about"> Chi sono </Link>
                         </li>
                         <li>
-                            Contatti
+                            < Link to = "/contacts"> Contatti</Link>
                         </li>
                     </ul>
 
