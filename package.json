@@ -15,6 +15,7 @@
     "@sanity/icons": "^3.4.0",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.65.0",
+    "dayjs": "^1.11.13",
     "next": "15.0.3",
     "next-sanity": "^9.8.16",
     "react": "19.0.0-rc-66855b96-20241106",
@@ -23,6 +24,7 @@
     "styled-components": "^6.1.13"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

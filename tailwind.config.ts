@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import typography from "@tailwindcss/typography";
 
 
 const config: Config = {
@@ -9,7 +10,7 @@ const config: Config = {
     "./src/sanity/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {},
-  plugins: [],
+  plugins: [typography],
 }
 
 export default config;
