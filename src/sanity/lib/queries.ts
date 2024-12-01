@@ -16,10 +16,6 @@ export const POSTS_QUERY =
     },
     []
   ),
-  author->{
-    name,
-    image
-  }
 }`)
 
 export const POSTS_SLUGS_QUERY =
@@ -31,7 +27,7 @@ export const POST_QUERY =
   defineQuery(`*[_type == "post" && slug.current == $slug][0]{
   _id,
   title,
-  body,
+  body[0...1],
   mainImage,
   publishedAt,
   "categories": coalesce(
@@ -47,3 +43,4 @@ export const POST_QUERY =
     image
   }
 }`)
+
