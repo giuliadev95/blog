@@ -1,4 +1,4 @@
-import { Author } from '@/components/Author'
+import { Author } from '@/components/Author';
 import { Categories } from '@/components/Categories'
 import { POSTS_QUERYResult } from '@/sanity/types'
 import { PublishedAt } from '@/components/PublishedAt'
@@ -7,7 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export function PostCard(props: POSTS_QUERYResult[0]) {
-  const { title, author, mainImage, publishedAt, categories } = props
+  const { title, author, mainImage, publishedAt, categories} = props
 
   return (
     <Link className="group" href={`/posts/${props.slug!.current}`}>
