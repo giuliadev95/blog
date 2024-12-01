@@ -16,6 +16,10 @@ export const POSTS_QUERY =
     },
     []
   ),
+  author->{
+    name,
+    image
+  }
 }`)
 
 export const POSTS_SLUGS_QUERY =
