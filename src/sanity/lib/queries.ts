@@ -48,3 +48,25 @@ export const POST_QUERY =
   }
 }`)
 
+// Query for 3 top posts to show in the Homepage
+export const THREE_POSTS_QUERY =
+  defineQuery(`*[_type == "post" && defined(slug.current) && (title == "Come trovare clienti" || title == "Risorse gratuite di grammatica" || title == "La prima lezione")]{
+   _id,
+  title,
+  slug,
+  body[0...1],
+  mainImage,
+  publishedAt,
+  "categories": coalesce(
+    categories[]->{
+      _id,
+      slug,
+      title
+    },
+    []
+  ),
+  author->{
+    name,
+    image
+  }
+  }`);
