@@ -4,7 +4,7 @@ import { components } from "@/sanity/portableTextComponents";
 import { PortableText } from "next-sanity";
 import { POST_QUERYResult } from "@/sanity/types";
 import { PublishedAt } from "@/components/PublishedAt";
-import { Title } from "@/components/Title";
+//import { Title } from "@/components/Title";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 
@@ -18,7 +18,7 @@ export function Post(props: NonNullable<POST_QUERYResult>) {
           <Categories categories={categories} />
           <PublishedAt publishedAt={publishedAt} />
         </div>
-        <Title>{title}</Title>
+        <h1>{title}</h1>
         <Author author={author} />
       </header>
       {mainImage ? (

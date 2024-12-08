@@ -9,8 +9,23 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/sanity/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  theme: {},
+  theme: {
+    extend: {
+      colors: {
+        darkGrey: 'var(--dark-grey)',
+        white: 'var(--white)',
+        lightGrey: 'var(--light-grey)',
+        lightMintGreen: 'var(--light-mint-green)',
+        red: 'var(--red)',
+      },
+      screens: {
+        largeMobile426: '426px',
+        xxl2560: '2560px',
+        mobile568: '568px',
+      }
+    },
+  },
   plugins: [typography],
 }
 
-export default config;
+export default config; 
