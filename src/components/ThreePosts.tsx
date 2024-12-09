@@ -12,37 +12,38 @@ export function ThreePosts(props: THREE_POSTS_QUERYResult[0]) {
   const { title, author, mainImage, publishedAt, categories, body} = props
 
   return (
-    <Link className="group" href={`/posts/${props.slug!.current}`}>
+    <div>
       <article className="flex flex-col items-center justify-center">
           {/* Author, Date */}
-          <div className='flex flex-col justify-between gap-4'>
+          <div className='flex flex-col justify-between'>
             <Author author={author} />
             <PublishedAt publishedAt={publishedAt} />
           </div>
-          {/* Image */}
-          {mainImage ? (
+          <Link className="group" href={`/posts/${props.slug!.current}`}>
+            {/* Image */}
+            {mainImage ? (
             <Image
               src={urlFor(mainImage).url()}
               width={300}
               height={300}
               alt={mainImage.alt || title || ''}
             />
-          ) : null}
-          {/* Title */}
-          <h2 className="text-2xl text-pretty font-semibold text-white group-hover:text-lightMintGreen transition-colors duration-500 ease-in-out relative">
-            <span className="relative z-[1]">{title}</span>
-          </h2>
-          {/* Body */}
-           {body ? (
-        <div className="text-lightGrey"> 
-          <PortableText value={body} components={components} />
-        </div>
-      ) : null}
-       
+            ) : null}
+            {/* Title */}
+            <h2 className="flex justify-center font-semibold text-white text-2xl mt-2 md:mt-6">
+              <span className="relative z-[1]">{title}</span>
+            </h2> 
+            {/* Body */}
+            {body ? (
+            <div className="text-lightGrey font-light text-base md:text-lg mt-8"> 
+              <PortableText value={body} components={components} />
+            </div>
+          ) : null}    
+        </Link>
       </article>
-        <div className="">
+        <div className="flex justify-center mt-2">
           <Categories categories={categories} />
         </div>
-    </Link>
+    </div>
   )
 }

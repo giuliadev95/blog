@@ -8,7 +8,7 @@ export default async function Latest() {
   const posts = await client.fetch(THREE_POSTS_QUERY, {}, options)
 
   return (
-    <div className="flex flex-col justify-center items-center py-20 px-6">
+    <div className="flex flex-col justify-center items-center py-4 px-6">
       <h2 className="text-4xl md:text-5xl font-extrabold text-lightMintGreen" id="in-evidenza">
         In Evidenza
         </h2>

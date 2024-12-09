@@ -7,7 +7,7 @@ type PublishedAtProps = {
 
 export function PublishedAt({ publishedAt }: PublishedAtProps) {
   return publishedAt ? (
-    <p className="text-sm text-lightGrey">
+    <p className="text-xs text-lightGrey text-center">
       {dayjs(publishedAt).format('D MMMM YYYY')}
     </p>
   ) : null
