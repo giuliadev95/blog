@@ -53,12 +53,11 @@ export function ThreePosts(props: THREE_POSTS_QUERYResult[0]) {
           </Link>
           <hr className='w-[20%] mx-auto mt-12 md:hidden'></hr>
         </article>
-
-        {/** COMMENT OUT THE CATEGORY COMPONENT, AS IT'S NOT INTERACTIVE YET.
+  
           <div className="flex justify-center mt-2">
             <Categories categories={categories} />
           </div>
-        */}
+      
     </div>
   )
 }
