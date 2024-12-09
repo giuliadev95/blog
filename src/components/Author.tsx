@@ -48,7 +48,7 @@ export function Author({ author }: AuthorProps) {
       <div>
         <span className='flex gap-4 mt-2 content-center items-center'>
           {author?.name ? (
-            <p className="text-sm text-white">{author.name}</p>
+            <p className="text-xs text-lightGrey">{author.name}</p>
           ) : null}
               <Link
                 href="https://www.instagram.com/giulia_moukouyou/"

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function About() {
     return(
-        <div className="flex flex-col justify-center items-center py-20 px-6">
+        <div className="flex flex-col justify-center items-center py-20 px-6 max-w-[1500px] mx-auto">
             <h2 className="text-4xl md:text-5xl font-extrabold text-lightMintGreen" id="chi-sono">Chi sono</h2>
             <div className=" flex flex-col md:flex-row-reverse items-center">
                 <Image

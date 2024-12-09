@@ -9,10 +9,10 @@ export default async function Latest() {
 
   return (
     <div className="flex flex-col justify-center items-center py-4 px-6">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-lightMintGreen" id="in-evidenza">
+      <h2 className="text-4xl md:text-5xl font-extrabold text-lightMintGreen mb-8" id="in-evidenza">
         In Evidenza
         </h2>
-      <div className="flex flex-col gap-24 py-12">
+      <div className="flex flex-col gap-24 py-12 max-w-[1500px] mx-auto">
         {posts.map((post) => (
           <ThreePosts key={post._id} {...post} />
         ))}
