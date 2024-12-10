@@ -1,6 +1,6 @@
 import About from "@/components/frontend/(main)/About";
 import Hero from "@/components/frontend/(main)/Hero";
-import Latest from "@/components/frontend/(main)/Latest";
+import InEvidenza from "@/components/frontend/(main)/InEvidenza";
 
 export default async function Page() {
   return (
@@ -8,7 +8,7 @@ export default async function Page() {
       <main>
         <Hero/>
         <About/>
-        <Latest/>
+        <InEvidenza/>
       </main>
     </section>
   )

@@ -23,6 +23,7 @@ html {
 body {
     background-color: var(--dark-grey);
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 /* Add no-scroll as a class to avoid the body scrolling when the Mobile menu is open. 

@@ -22,7 +22,10 @@ const config: Config = {
         largeMobile426: '426px',
         xxl2560: '2560px',
         mobile568: '568px',
-      }
+      },
+      width: {
+        'fill': '-webkit-fill-available',
+      },
     },
   },
   plugins: [typography],

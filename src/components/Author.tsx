@@ -66,7 +66,7 @@ export function Author({ author }: AuthorProps) {
                 <FaLinkedinIn className=' text-red font-light' />
               </Link>
         </span>
-    </div>
-    </div>
+    </div> 
+  </div>
   ) : null
 }
