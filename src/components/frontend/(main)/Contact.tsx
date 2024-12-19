@@ -1,7 +1,6 @@
 // This is the Contact component, for the "Contatti" section of the Homepage.
 // import React Icons
 import { FaInstagram } from 'react-icons/fa6'; ///// header branch: Installed react-icons
-// import { FaLinkedinIn } from "react-icons/fa6";
 import { FaMedium } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 // Import components
@@ -20,30 +19,29 @@ export default function Contact() {
                 <ul className="flex items-center space-x-6 lg:gap-4">
                     <li className="size-4">
                         <Link
-                        href={"#"}
+                         href={"https://medium.com/@giuliamoukouyou"}
+                         rel="noopener noreferrer"
+                         target="_blank"
                         >
-                            <FaMedium className="text-white text-3xl"/>
-                        </Link>
-                    </li>
-                    {/* <li className="size-4">
-                        <Link
-                        href={"#"}
-                        >
-                            <FaLinkedinIn className="text-white text-3xl"/>
-                        </Link>
-                    </li> */}
-                    <li className="size-4">
-                        <Link
-                        href={"#"}
-                        >
-                            <FaSquareXTwitter className="text-white text-3xl"/>
+                        <FaMedium className="text-white text-3xl"/>
                         </Link>
                     </li>
                     <li className="size-4">
                         <Link
-                        href={"#"}
+                        href={"https://x.com/Gamete14"}
+                        rel="noopener noreferrer"
+                        target="_blank"
                         >
-                            <FaInstagram className="text-white text-3xl"/>
+                        <FaSquareXTwitter className="text-white text-3xl"/>
+                        </Link>
+                    </li>
+                    <li className="size-4">
+                        <Link
+                        href={"https://www.instagram.com/tutorlife.official/"}
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >
+                        <FaInstagram className="text-white text-3xl"/>
                         </Link>
                     </li>
                 </ul>

@@ -95,21 +95,27 @@ export default function Navbar () {
                                 <ul className="flex items-center justify-between space-x-8 py-6">
                                     <li className="size-4">
                                         <Link
-                                        href={"/"}
+                                        href={"https://www.instagram.com/tutorlife.official/"}
+                                        rel="noopener noreferrer"
+                                        target="_blank"
                                         >
-                                            <FaInstagramSquare className="text-white text-3xl"/>
+                                        <FaInstagramSquare className="text-white text-3xl"/>
                                         </Link>
                                     </li>
                                     <li className="size-4">
                                         <Link
-                                        href={"/"}
-                                        >
+                                            href={"https://x.com/Gamete14"}
+                                            rel="noopener noreferrer"
+                                            target="_blank"
+                                            >
                                             <FaSquareXTwitter className="text-white text-3xl"/>
                                         </Link>
                                     </li>
                                     <li className="size-4">
                                         <Link
-                                        href={"/"}
+                                            href={"https://medium.com/@giuliamoukouyou"}
+                                            rel="noopener noreferrer"
+                                            target="_blank"
                                         >
                                             <FaMedium className="text-white text-3xl"/>
                                         </Link>

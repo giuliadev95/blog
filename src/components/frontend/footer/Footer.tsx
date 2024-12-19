@@ -43,23 +43,53 @@ export default function Footer() {
                 <div className="text-center md:text-left mt-8 md:mt-0">
                     <h3 className="font-semibold text-lg text-white">Legale</h3>
                     <ul className="font-normal text-lightGrey text-base flex flex-col gap-2 mt-2">
-                        <Link 
-                            href={"/termini-condizioni/"}>
-                            <li>Termini e condizioni</li>
-                        </Link>
+                        <li>
+                            <Link 
+                                href={"/termini-condizioni/"}
+                                >
+                                Termini e condizioni
+                            </Link>
+                            </li>
+                            <li>
                         <Link
-                        href={"/privacy/"}>
-                            <li>Privacy Policy</li>
+                            href={"/privacy/"}
+                            >
+                            Privacy Policy
                         </Link>
+                            </li>
                     </ul>
                 </div>
 
                 <div className="text-center md:text-left mt-8 md:mt-0">
                     <h3 className="font-semibold text-lg text-white">Contatti</h3>
                     <ul className="font-normal text-lightGrey text-base flex flex-col gap-2 mt-2">
-                        <li>Instagram</li>
-                        <li>Twitter</li>
-                        <li>Medium</li>
+                        <li>
+                            <Link
+                            href={"https://www.instagram.com/tutorlife.official/"}
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            >
+                            Instagram
+                            </Link>
+                        </li>
+                        <li>
+                        <Link
+                            href={"https://x.com/Gamete14"}
+                            rel="noopener noreferrer"
+                            target="_blank"
+                            >
+                            Twitter
+                        </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href={"https://medium.com/@giuliamoukouyou"}
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                >
+                                Medium
+                            </Link>
+                        </li>
                     </ul>
                 </div>
             </div>

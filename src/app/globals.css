@@ -11,11 +11,6 @@
     --red: #F53B57;
 }
 
-/* Apply border for frontend dev - remove in production */
-* {
-    /* border: 1px solid red;  */
-}
-
 html {
     scroll-behavior: smooth;
 }

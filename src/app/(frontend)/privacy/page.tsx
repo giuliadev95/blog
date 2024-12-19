@@ -34,13 +34,13 @@ export default function Termini() {
             </ul>
 
             {/* 2. Cookie e strumenti di analisi */}
-            <p className="text-lightGrey max-w-[1200px] text-lg py-12 border-b border-zinc-700">
+            <div className="text-lightGrey max-w-[1200px] text-lg py-12 border-b border-zinc-700">
                 <h3 className="text-white font-bold text-2xl lg:3xl pb-4">
                 2. Cookie e strumenti di analisi
                 </h3>
                 Il nostro sito non utilizza cookie o strumenti di tracciamento come Google Analytics. 
                 La tua navigazione su Tutor Life è completamente anonima e non monitoriamo alcuna attività o comportamento online.
-            </p>
+            </div>
 
             {/* 3. Link a siti esterni */}
             <ul className="text-lightGrey max-w-[1200px] text-lg py-12 list-none border-b border-zinc-700">
@@ -54,24 +54,24 @@ export default function Termini() {
             </ul>
 
             {/* 4. Modifiche alla Privacy Policy */}
-            <p className="text-lightGrey max-w-[1200px] text-lg py-12 list-none border-b border-zinc-700">
+            <div className="text-lightGrey max-w-[1200px] text-lg py-12 list-none border-b border-zinc-700">
                 <h3 className="text-white font-bold text-2xl lg:3xl pb-4">
                     4. Modifiche alla Privacy Policy
                 </h3>
                 Ci riserviamo il diritto di aggiornare questa Privacy Policy in qualsiasi momento. 
                 Eventuali modifiche saranno pubblicate su questa pagina e avranno effetto 
                 immediato dalla data di pubblicazione.
-            </p>
+            </div>
 
             {/* 5. Contatti */}
-            <p className="text-lightGrey max-w-[1200px] text-lg py-12 list-none border-b border-zinc-700">
+            <div className="text-lightGrey max-w-[1200px] text-lg py-12 list-none border-b border-zinc-700">
                 <h3 className="text-white font-bold text-2xl lg:3xl pb-4">
                 5. Contatti
                 </h3>
                 Non offriamo moduli o indirizzi email per contattarci. Se desideri ulteriori 
                 informazioni, ti invitiamo a seguire gli aggiornamenti del 
                 blog per eventuali comunicazioni future.
-            </p>
+            </div>
 
             {/* Modifiche ai Termini e Condizioni */}
             <p className="text-lightGrey max-w-[1200px] text-lg py-12 list-none border-b border-zinc-700">

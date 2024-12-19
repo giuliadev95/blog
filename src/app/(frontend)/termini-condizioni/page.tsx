@@ -36,13 +36,13 @@ export default function Termini() {
             </ul>
 
             {/* 2. Accesso al sito */}
-            <p className="text-lightGrey max-w-[1200px] text-lg py-12 border-b border-zinc-700">
+            <div className="text-lightGrey max-w-[1200px] text-lg py-12 border-b border-zinc-700">
                 <h3 className="text-white font-bold text-2xl lg:3xl pb-4">
                     2. Accesso al sito
                 </h3>
                 L&apos;accesso al sito Tutor Life è libero e non richiede registrazione. 
                 Gli utenti possono leggere gli articoli gratuitamente e senza alcuna forma di autenticazione.
-            </p>
+            </div>
 
             {/* 3. Utilizzo dei contenuti */}
             <ul className="text-lightGrey max-w-[1200px] text-lg py-12 list-none border-b border-zinc-700">
@@ -72,7 +72,7 @@ export default function Termini() {
             </ul>
 
             {/* 4. Esclusione di responsabilità */}
-            <p className="text-lightGrey max-w-[1200px] text-lg py-12 list-none border-b border-zinc-700">
+            <div className="text-lightGrey max-w-[1200px] text-lg py-12 list-none border-b border-zinc-700">
                 <h3 className="text-white font-bold text-2xl lg:3xl pb-4">
                     4. Esclusione di responsabilità
                 </h3>
@@ -88,7 +88,7 @@ export default function Termini() {
                         L&apos;utilizzo delle informazioni è a rischio esclusivo dell&apos;utente.
                     </li>
                 </ul>
-            </p>
+            </div>
 
             {/* 5. Collegamenti a siti esterni */}
             <p className="text-lightGrey max-w-[1200px] text-lg py-12 list-none border-b border-zinc-700">
@@ -110,7 +110,7 @@ export default function Termini() {
             </p>
 
             {/* 6. Modifiche ai Termini e Condizioni */}
-            <p className="text-lightGrey max-w-[1200px] text-lg py-12 list-none border-b border-zinc-700">
+            <div className="text-lightGrey max-w-[1200px] text-lg py-12 list-none border-b border-zinc-700">
                 <h3 className="text-white font-bold text-2xl lg:3xl pb-4">
                     6. Modifiche ai Termini e Condizioni
                 </h3>
@@ -126,16 +126,16 @@ export default function Termini() {
                         </li>     
                     </ul>
                 </li>
-            </p>
+            </div>
             
             {/* 7. Contatti */}
-            <p className="text-lightGrey max-w-[1200px] text-lg py-12 border-b border-zinc-700">
+            <div className="text-lightGrey max-w-[1200px] text-lg py-12 border-b border-zinc-700">
                 <h3 className="text-white font-bold text-2xl lg:3xl pb-4">
                 8. Contatti
                 </h3>
                 L&apos;accesso al sito Tutor Life è libero e non richiede registrazione. 
                 Gli utenti possono leggere gli articoli gratuitamente e senza alcuna forma di autenticazione.
-            </p>
+            </div>
             <p className="text-lightGrey max-w-[1200px] text-lg py-12 list-none border-b border-zinc-700">
                 Navigando su Tutor Life, accetti implicitamente i Termini e Condizioni sopra riportati. 
                 Grazie per aver visitato il nostro blog.
