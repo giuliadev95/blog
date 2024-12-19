@@ -9,10 +9,34 @@ export default function Footer() {
                 <div className="text-center md:text-left">
                     <h3 className="font-semibold text-lg text-white">Sito web</h3>  
                     <ul className="font-normal text-lightGrey text-base flex flex-col gap-2 mt-2">
-                        <li>Home</li>
-                        <li>Chi sono</li>
-                        <li>Blog</li>
-                        <li>Contatti</li>      
+                        <li>
+                            <Link
+                            href={"/"}
+                            >
+                            Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                            href={"/#chi-sono"}
+                            >
+                            Chi sono
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                            href={"/posts"}
+                            >
+                            Blog
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                            href={"/#contatti"}
+                            >
+                            Contatti
+                            </Link>  
+                        </li>    
                     </ul>
                 </div>
 
