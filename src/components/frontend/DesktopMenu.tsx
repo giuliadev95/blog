@@ -20,7 +20,7 @@ export default function DesktopMenu() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/" className="text-white opacity-70 text-base font-bold" >
+                                <Link href="/#contatti" className="text-white opacity-70 text-base font-bold" >
                                     Contatti
                                 </Link>
                             </li>  

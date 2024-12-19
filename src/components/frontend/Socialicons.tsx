@@ -1,5 +1,5 @@
 import { FaInstagram } from 'react-icons/fa6'; ///// header branch: Installed react-icons
-import { FaLinkedinIn } from "react-icons/fa6";
+// import { FaLinkedinIn } from "react-icons/fa6";
 import { FaMedium } from "react-icons/fa6";
 import { FaSquareXTwitter } from "react-icons/fa6";
 
@@ -15,13 +15,13 @@ export default function SocialIcons() {
                     <FaMedium className="text-white"/>
                 </Link>
             </li>
-            <li className="size-4">
+            {/* <li className="size-4">
                 <Link
                 href={"/"}
                 >
                     <FaLinkedinIn className="text-white"/>
                 </Link>
-            </li>
+            </li> */}
             <li className="size-4">
                 <Link
                 href={"/"}

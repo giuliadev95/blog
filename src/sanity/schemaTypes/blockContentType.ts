@@ -57,9 +57,7 @@ export const blockContentType = defineType({
         ],
       },
     }),
-    // You can add additional types here. Note that you can't use
-    // primitive types such as 'string' and 'number' in the same array
-    // as a block type.
+    // Additional types here.
     defineArrayMember({
       type: 'image',
       icon: ImageIcon,

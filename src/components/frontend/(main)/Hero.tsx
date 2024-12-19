@@ -10,7 +10,7 @@ export default function Hero() {
             <div className="relative w-screen h-[442px] lg:h-[482px]">
                 <Image  className="relative -z-10"
                     src="/hero-img.jpg" 
-                    alt="Hero Image" 
+                    alt="A student studying on the Ipad" 
                     layout="fill" 
                     objectFit="cover" 
                     priority 

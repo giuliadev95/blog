@@ -1,5 +1,4 @@
 // This is the about component, for the "Chi sono" section of the Homepage.
-// TITOLO + DIV FLEX WRAP CON FOTO + PARAGRAFO , DA \   MD IN POI FLEX REVERSE
 import Image from "next/image";
 import Link from "next/link";
 

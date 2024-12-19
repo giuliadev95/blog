@@ -6,6 +6,7 @@ import { POST_QUERYResult } from "@/sanity/types";
 import { PublishedAt } from "@/components/PublishedAt";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Post(props: NonNullable<POST_QUERYResult>) {
   const { title, author, mainImage, body, publishedAt, categories } = props;
@@ -17,7 +18,7 @@ export function Post(props: NonNullable<POST_QUERYResult>) {
           <Categories categories={categories} />
           <PublishedAt publishedAt={publishedAt} />
         </div>
-        <h1>{title}</h1>
+        <h1 className="text-white font-semibold text-3xl text-pretty">{title}</h1>
         <Author author={author} />
       </header>
       {mainImage ? (
@@ -35,6 +36,12 @@ export function Post(props: NonNullable<POST_QUERYResult>) {
           <PortableText value={body} components={components} />
         </div>
       ) : null}
+      <Link 
+      href="/posts/"
+      className="block bg-red rounded-[20px] text-white text-base px-4 py-2 lg:col-span-2 lg:col-start-6 text-center w-fit"
+      >
+        Back to blog
+      </Link>
     </article>
   );
 }

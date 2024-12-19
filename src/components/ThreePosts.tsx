@@ -16,7 +16,7 @@ export function ThreePosts(props: THREE_POSTS_QUERYResult[0]) {
     <div>
       <article>  
       <Link className="group" href={`/posts/${props.slug!.current}`}>            
-            <div className="flex flex-col md:flex-row gap-6 md:gap-0">
+            <div className="flex flex-col md:flex-row gap-8 lg:gap-4">
               {/** Image */}
               <div className="basis-[40%]">
                 {mainImage ? (
@@ -52,7 +52,7 @@ export function ThreePosts(props: THREE_POSTS_QUERYResult[0]) {
               ) : null}  
               </div>                   
             </div>
-            <hr className='w-[20%] mx-auto mt-12 md:hidden'></hr>
+            <hr className='w-[20%] mx-auto mt-12 md:hidden'/>
           </Link>
         </article>
     </div>

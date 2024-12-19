@@ -19,8 +19,14 @@ export default function Footer() {
                 <div className="text-center md:text-left mt-8 md:mt-0">
                     <h3 className="font-semibold text-lg text-white">Legale</h3>
                     <ul className="font-normal text-lightGrey text-base flex flex-col gap-2 mt-2">
-                        <li>Termini e condizioni</li>
-                        <li>Privacy Policy</li>
+                        <Link 
+                            href={"/termini-condizioni/"}>
+                            <li>Termini e condizioni</li>
+                        </Link>
+                        <Link
+                        href={"/privacy/"}>
+                            <li>Privacy Policy</li>
+                        </Link>
                     </ul>
                 </div>
 
@@ -35,7 +41,7 @@ export default function Footer() {
             </div>
             <div className="border-t border-t-lightGrey/10 pt-6 pb-4 flex flex-col gap-4 items-center justify-center">
                 <p className="attribution text-center font-normal text-lightGrey text-sm">
-                    Images designed by 
+                    All images designed by 
                     <Link 
                         href={'http://www.freepik.com/'}
                         target="_blank"

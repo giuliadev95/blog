@@ -86,7 +86,7 @@ export default function Navbar () {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/" className="text-white opacity-70 text-2xl font-normal py-6" 
+                                    <Link href="/#contatti" className="text-white opacity-70 text-2xl font-normal py-6" 
                                     onClick={closeMenu} >
                                         Contatti
                                     </Link>
