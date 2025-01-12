@@ -107,7 +107,7 @@ export default function Footer() {
                 <p className="text-center font-normal text-lightGrey text-sm">
                     © 2024 
                     <Link 
-                        href={'https://giuliadev.netlify.app/'}
+                        href={'https://www.giuliadev.com/'}
                         target="_blank"
                         rel="noopener noreferrer"
                         >
