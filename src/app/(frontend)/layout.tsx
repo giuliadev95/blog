@@ -80,6 +80,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://www.tutorlife.com" />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="RTD7FtdQxt-pHOdtscbeMS5YtZdIJwkfsoCQDUN30GM" />
       </head>
       <body>
         <header>
