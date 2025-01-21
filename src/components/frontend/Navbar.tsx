@@ -66,31 +66,33 @@ export default function Navbar () {
                 {/* Bottom: Mobile Menu */}
                 {isMenuOpen? ( 
                            
-                            <ul className=" flex flex-col lg:hidden justify-start items-center space-y-6 my-12 h-screen">                          
-                                <li>
-                                    <Link href="/" className="text-white opacity-70 text-2xl font-normal py-6"
-                                    onClick={closeMenu} >
-                                        Home
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#chi-sono" className="text-white opacity-70 text-2xl font-normal py-6"
-                                    onClick={closeMenu} >
-                                        Chi sono
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/posts" className="text-white opacity-70 text-2xl font-normal py-6"
-                                    onClick={closeMenu} >
-                                        Blog
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link href="/#contatti" className="text-white opacity-70 text-2xl font-normal py-6" 
-                                    onClick={closeMenu} >
-                                        Contatti
-                                    </Link>
-                                </li>
+                            <ul className="flex flex-col lg:hidden justify-start items-center  h-screen">  
+                                <ul>                                  
+                                    <li>
+                                        <Link href="/" className="text-white opacity-70 text-2xl font-normal py-6"
+                                        onClick={closeMenu} >
+                                            Home
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/#chi-sono" className="text-white opacity-70 text-2xl font-normal py-6"
+                                        onClick={closeMenu} >
+                                            Chi sono
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/posts" className="text-white opacity-70 text-2xl font-normal py-6"
+                                        onClick={closeMenu} >
+                                            Blog
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/#contatti" className="text-white opacity-70 text-2xl font-normal py-6" 
+                                        onClick={closeMenu} >
+                                            Contatti
+                                        </Link>
+                                    </li>
+                                </ul>    
                                 {/** Social Icons */}
                                 <ul className="flex items-center justify-between space-x-8 py-6">
                                     <li className="size-4">
