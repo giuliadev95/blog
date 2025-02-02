@@ -19,6 +19,7 @@ const config: Config = {
         red: 'var(--red)',
       },
       screens: {
+        xs: '360px',
         largeMobile426: '426px',
         xxl2560: '2560px',
         mobile568: '568px',
