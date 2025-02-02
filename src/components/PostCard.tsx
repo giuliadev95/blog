@@ -16,9 +16,12 @@ export function PostCard(props: POSTS_QUERYResult[0]) {
           <Categories categories={categories} />
         </div>
         <div className="md:col-span-5 md:w-full">
-          <h2 className="text-2xl text-pretty font-semibold text-white group-hover:text-red transition-colors relative">
+          <h2 className="text-2xl text-pretty font-semibold text-white group-hover:text-lightMintGreen transition-colors relative">
+          <span>{title}</span>
+          {/*  
             <span className="relative z-[1]">{title}</span>
             <span className="bg-white z-0 absolute inset-0 rounded-lg opacity-0 transition-all group-hover:opacity-100 group-hover:scale-y-110 group-hover:scale-x-105 scale-75" />
+          */}
           </h2>
           <div className="flex items-center flex-wrap xs:flex-nowrap gap-x-4 xs:gap-x-6 mt-2 md:mt-6">
             <Author author={author} />
