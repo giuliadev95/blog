@@ -105,7 +105,7 @@ export default function Footer() {
                 </p>
 
                 <p className="text-center font-normal text-lightGrey text-sm">
-                    © 2024 
+                    © 2025
                     <Link 
                         href={'https://www.giuliadev.com/'}
                         target="_blank"

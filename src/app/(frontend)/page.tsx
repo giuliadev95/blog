@@ -1,7 +1,7 @@
 import About from "@/components/frontend/(main)/About";
 import Contact from "@/components/frontend/(main)/Contact";
 import Hero from "@/components/frontend/(main)/Hero";
-import InEvidenza from "@/components/frontend/(main)/InEvidenza";
+//import InEvidenza from "@/components/frontend/(main)/InEvidenza";
 
 export default async function Page() {
   return (
@@ -9,7 +9,10 @@ export default async function Page() {
       <main>
         <Hero/>
         <About/>
-        <InEvidenza/>
+        {/**
+          <InEvidenza/>
+         * 
+         */}
         <Contact/>
       </main>
     </section>
