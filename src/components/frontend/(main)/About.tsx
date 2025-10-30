@@ -19,7 +19,7 @@ export default function About() {
                     Ciao! Mi chiamo Giulia e sono una freelance 🙋‍♀️, in questo blog ti spiego i metodi e le strategie per diventare un insegnante di successo.
                     </p>
                     <p className="text-lightGrey font-light text-base md:text-lg">
-                        Con alle spalle una carriera come tutor di materie classiche e umanistiche, sia online sia in presenza, ho fatto tesoro della mia esperienza e ho creato Tutor life, per condividere con te tutte le dritte e i consigli che ritengo importanti, sperando di esserti d'aiuto.</p>
+                        Con alle spalle una carriera come tutor di materie classiche e umanistiche, online e in presenza, ho fatto tesoro della mia esperienza e ho creato Tutor life, per condividere con te tutte le dritte e i consigli che ritengo importanti, sperando di esserti d&apos;aiuto.</p>
                     <p className="text-lightGrey font-light text-base md:text-lg">Qui trovi articoli su come trovare studenti, come organizzare il tuo materiale didattico, come comunicare in modo efficace e altro ancora!</p>
                     <Link className="flex justify-center"
                     href={"/posts"}> 
