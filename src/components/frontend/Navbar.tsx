@@ -30,12 +30,21 @@ export default function Navbar () {
         return () => document.body.classList.remove("no-scroll");
     }, [isMenuOpen]);
 
+    // close menu on Escape key
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsMenuOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, []);
+
 
     return (
-        // General Navbar with Desktop Menu / Mobile Menu
+        // Navbar with Desktop Menu / Mobile Menu
             <nav className="">
-                {/* General  Navbar container */}
-                <div className="mx-auto w-full h-16 text-xl py-0 px-8 mb-0 border-0 shadow-none flex justify-between items-center  bg-lightCream">
+                {/*  Navbar container */}
+                <div className="relative z-50 mx-auto w-full h-16 text-xl py-0 px-8 mb-0 border-0 shadow-none flex justify-between items-center bg-lightCream">
                     {/* Logo just for smarthpnes and tablets */}    
                     <Logo/>  
                     {/* Hamburger Icon to Toggle Mobile Menu */}
@@ -64,68 +73,89 @@ export default function Navbar () {
                     <Socialicons/>
                 </div>
                 {/* Bottom: Mobile Menu */}
-                {isMenuOpen? ( 
-                           
-                            <ul className="flex flex-col lg:hidden justify-start items-center  h-screen">  
-                                <ul>                                  
-                                    <li>
-                                        <Link href="/" className="text-white opacity-70 text-2xl font-normal py-6"
-                                        onClick={closeMenu} >
-                                            Home
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/#chi-sono" className="text-white opacity-70 text-2xl font-normal py-6"
-                                        onClick={closeMenu} >
-                                            Chi sono
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/posts" className="text-white opacity-70 text-2xl font-normal py-6"
-                                        onClick={closeMenu} >
-                                            Blog
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/#contatti" className="text-white opacity-70 text-2xl font-normal py-6" 
-                                        onClick={closeMenu} >
-                                            Contatti
-                                        </Link>
-                                    </li>
-                                </ul>    
-                                {/** Social Icons */}
-                                <ul className="flex items-center justify-between space-x-8 py-6">
-                                    <li className="size-4">
-                                        <Link
-                                        href={"https://www.instagram.com/tutorlife.official/"}
-                                        rel="noopener noreferrer"
-                                        target="_blank"
-                                        >
-                                        <FaInstagramSquare className="text-white text-3xl"/>
-                                        </Link>
-                                    </li>
-                                    <li className="size-4">
-                                        <Link
-                                            href={"https://x.com/Gamete14"}
-                                            rel="noopener noreferrer"
-                                            target="_blank"
-                                            >
-                                            <FaSquareXTwitter className="text-white text-3xl"/>
-                                        </Link>
-                                    </li>
-                                    <li className="size-4">
-                                        <Link
-                                            href={"https://medium.com/@giuliamoukouyou"}
-                                            rel="noopener noreferrer"
-                                            target="_blank"
-                                        >
-                                            <FaMedium className="text-white text-3xl"/>
-                                        </Link>
-                                    </li>
-                                </ul>       
-                            </ul>                    
-                ) : null
-                }
+                {isMenuOpen ? (
+                    <nav
+                      className="lg:hidden fixed inset-0 z-40 bg-black/70 backdrop-blur-sm flex items-center justify-center"
+                      aria-modal="true"
+                      role="dialog"
+                      onClick={closeMenu}
+                    >
+                      <ul className="flex flex-col items-center space-y-4" onClick={(e) => e.stopPropagation()}>
+                         <li>
+                           <Link
+                             href="/"
+                             className="block text-white opacity-90 text-2xl font-normal py-4 px-6 w-full text-center"
+                             onClick={closeMenu}
+                           >
+                             Home
+                           </Link>
+                         </li>
+                         <li>
+                           <Link
+                             href="/#chi-sono"
+                             className="block text-white opacity-90 text-2xl font-normal py-4 px-6 w-full text-center"
+                             onClick={closeMenu}
+                           >
+                             Chi sono
+                           </Link>
+                         </li>
+                         <li>
+                           <Link
+                             href="/posts"
+                             className="block text-white opacity-90 text-2xl font-normal py-4 px-6 w-full text-center"
+                             onClick={closeMenu}
+                           >
+                             Blog
+                           </Link>
+                         </li>
+                         <li>
+                           <Link
+                             href="/#contatti"
+                             className="block text-white opacity-90 text-2xl font-normal py-4 px-6 w-full text-center"
+                             onClick={closeMenu}
+                           >
+                             Contatti
+                           </Link>
+                         </li>
+
+                        {/* Social Icons */}
+                        <li className="pt-4">
+                          <ul className="flex items-center justify-center space-x-6">
+                            <li>
+                              <Link
+                                href={"https://www.instagram.com/tutorlife.official/"}
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                className="text-white text-3xl"
+                              >
+                                <FaInstagramSquare />
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href={"https://x.com/Gamete14"}
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                className="text-white text-3xl"
+                              >
+                                <FaSquareXTwitter />
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href={"https://medium.com/@giuliamoukouyou"}
+                                rel="noopener noreferrer"
+                                target="_blank"
+                                className="text-white text-3xl"
+                              >
+                                <FaMedium />
+                              </Link>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </nav>
+                ) : null}
             </nav> 
     )
 }

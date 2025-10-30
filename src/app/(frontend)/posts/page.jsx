@@ -21,12 +21,12 @@ export default function PostsPage() {
             >
               <div className="p-6 flex flex-col justify-between h-full">
                 <div>
-                  <h2 className="text-2xl font-semibold text-white mb-3 group-hover:text-lightMintGreen transition-colors">
+                  <h2 className="text-2xl font-semibold text-white mb-3">
                     {p.title}
                   </h2>
                   <p className="text-sm text-gray-400 mb-4">{p.date}</p>
                   <p className="text-gray-300 line-clamp-3">
-                    {p.excerpt || 'Un articolo interessante da leggere!'}
+                    {p.excerpt || 'Come preparare il primo incontro con il tuo studente per essere professionale e affidabile.'}
                   </p>
                 </div>
 

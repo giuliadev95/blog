@@ -52,7 +52,7 @@ export default function Hero() {
             <div className="relative  h-[100px] w-full bg-darkGrey flex items-center justify-between "> 
                 <div className="absolute inset-0 z-20 h-full w-full bg-gray-50/5">
                 </div>  
-                <p className="absolute inset-0 z-40 h-full w-full flex items-center justify-center flex-wrap text-white text-base md:text-lg font-normal md:text-center">
+                <p className="absolute inset-0 z-30 h-full w-full flex items-center justify-center flex-wrap text-white text-base md:text-lg font-normal md:text-center">
                     <span>
                     Trova 
                     <span className="text-lightMintGreen mx-1">
