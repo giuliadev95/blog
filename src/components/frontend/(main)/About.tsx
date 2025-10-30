@@ -16,10 +16,11 @@ export default function About() {
                 <div className="flex flex-col items-center md:items-start gap-8 justify-center max-w-[800px]">
                     <h3 className="font-semibold text-white text-2xl mt-2 md:mt-6">Un blog per insegnanti</h3>
                     <p className="text-lightGrey font-light text-base md:text-lg">
-                    Ciao! 🙋‍♀️ Mi chiamo Giulia e sono una freelance, lavoro come insegnante online di materie umanistiche e classiche.
+                    Ciao! Mi chiamo Giulia e sono una freelance 🙋‍♀️, in questo blog ti spiego i metodi e le strategie per diventare un insegnante di successo.
                     </p>
-                    <p className="text-lightGrey font-light text-base md:text-lg">Ho fatto tesoro della mia esperienza e ho creato Tutor life, per condividere informazioni e consigli che ritengo importanti, sperando di essere d’aiuto per aspiranti insegnanti.</p>
-                    <p className="text-lightGrey font-light text-base md:text-lg">Qui troverai articoli su come trovare studenti, come organizzare il tuo materiale didattico, come comunicare in modo efficace con i clienti e altro ancora!</p>
+                    <p className="text-lightGrey font-light text-base md:text-lg">
+                        Con alle spalle una carriera come tutor di materie classiche e umanistiche, sia online sia in presenza, ho fatto tesoro della mia esperienza e ho creato Tutor life, per condividere con te tutte le dritte e i consigli che ritengo importanti, sperando di esserti d'aiuto.</p>
+                    <p className="text-lightGrey font-light text-base md:text-lg">Qui trovi articoli su come trovare studenti, come organizzare il tuo materiale didattico, come comunicare in modo efficace e altro ancora!</p>
                     <Link className="flex justify-center"
                     href={"/posts"}> 
                         <button className="block bg-red rounded-[20px] text-white text-base px-4 py-2">
