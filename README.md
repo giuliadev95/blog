@@ -1,3 +1,7 @@
+# ABOUT THIS PROJECT
+This is a personal blog I started to share career tips and advice with all aspiring online tutors.
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
